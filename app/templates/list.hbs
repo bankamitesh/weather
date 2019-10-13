@@ -1,0 +1,18 @@
+<div class="sidebar home-sidebar">
+    <ul class="nav nav-sidebar mtop20">
+        <li {{action "selectCountry" "india"}}><a href="#">India</a></li>
+        <li {{action "selectCountry" "england"}}><a href="#">England</a></li>
+        <li {{action "selectCountry" "usa"}}><a href="#">USA</a></li>
+        <li {{action "selectCountry" "australia"}}><a href="#">Australia</a></li>
+        <li {{action "selectCountry" "russia"}}><a href="#">Russia</a></li>
+    </ul>
+</div>
+<div class="main-container inner" style="    margin-left: 13%;">
+    <div class="content-container full-height">
+        <div class="row" style="margin:0">
+            {{#each model as |city|}}
+                <div class="col-md-3">{{city-item  city=city}}</div>
+            {{/each}}
+        </div>
+    </div>
+</div>
